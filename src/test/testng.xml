@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MyTests">
+    <test name="DemoTests">
+
+        <groups>
+            <run>
+                <include name="Regression"/>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="hardTests.HardTests">
+                <methods>
+                    <include name="sumOfAnyNumbersTest"/>
+                    <include name="divideByZeroTest"/>
+                </methods>
+            </class>
+            <class name="simpleTests.SimpleTests"/>
+            <class name="mediumTests.MediumTests"/>
+        </classes>
+    </test>
+</suite>
+
